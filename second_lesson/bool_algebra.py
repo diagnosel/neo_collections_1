@@ -46,28 +46,28 @@
 # для блоку інструкцій використовувати 4 пробіли.
 
 
-x = int(input("X: "))
-y = int(input("Y: "))
+# x = int(input("X: "))
+# y = int(input("Y: "))
 
-if x == 0:
-    print("X can`t be equal to zero") #4 пробіли
-    x = int(input("X: "))
+# if x == 0:
+#     print("X can`t be equal to zero") #4 пробіли
+#     x = int(input("X: "))
 
-result = y / x
-print(result)
+# result = y / x
+# print(result)
 
 
-#5
-if x >= 0:
-    if y >= 0:  # x > 0, y > 0
-        print("Перша чверть")
-    else:  # x > 0, y < 0
-        print("Четверта чверть")
-else:
-    if y >= 0:  # x < 0, y > 0
-        print("Друга чверть")
-    else:  # x < 0, y < 0
-        print("Третя чверть")
+# #5
+# if x >= 0:
+#     if y >= 0:  # x > 0, y > 0
+#         print("Перша чверть")
+#     else:  # x > 0, y < 0
+#         print("Четверта чверть")
+# else:
+#     if y >= 0:  # x < 0, y > 0
+#         print("Друга чверть")
+#     else:  # x < 0, y < 0
+#         print("Третя чверть")
 
 """
                     y+
@@ -85,3 +85,28 @@ x-       ────────────┼──────────�
                     y-
 
 """
+
+#ternar
+is_nice = True
+state = "nice" if is_nice else "not nice"
+print(state)
+
+#те саме що і 
+# is_nice = True
+# if is_nice:
+#     state = "nice"
+# else:
+#     state = "not nice"
+
+
+#В прикладі ми присвоїмо msg значення some_data, якщо some_data не є None
+some_data = None
+msg = some_data or "Не було повернено даних"
+print(msg)
+
+#те саме що і 
+# some_data = None
+# if some_data:
+#     msg = some_data
+# else:
+#     msg = "Не було повернено даних"
