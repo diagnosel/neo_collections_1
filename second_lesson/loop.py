@@ -51,9 +51,46 @@
 # які можуть бути модифіковані в процесі 
 # виконання циклу
 
-a = 0
+# a = 0
+# while True:
+#     print(a)
+#     if a >= 20:
+#         break
+#     a = a + 1
+
+
+#Наприклад echo скрипт, який виводить в консоль 
+# те, що ви введете, доки ви не введете рядок 
+# тексту exit:
+
+
+
+# while True:
+#     user_input = input()
+#     print(user_input)
+#     if user_input == "exit":
+#         break
+
+#3
+# інструкція print(a) не виконувалась, 
+# коли a ділилося на 2 без залишку, 
+# оскільки ітерація завершувалася за допомогою continue.
+# a = 0
+# while a < 6:
+#     a = a + 1
+#     if not a % 2:
+#         continue
+#     print(a)
+
+
+#4
+# Оператори continue та break працюють тільки всередині одного циклу.
+# В ситуації вкладених циклів немає способу вийти з усіх циклів одразу.
 while True:
-    print(a)
-    if a >= 20:
-        break
-    a = a + 1
+    number = input("number = ")
+    number = int(number)
+    while True:
+        print(number)
+        number = number - 1
+        if number < 0:
+            break
