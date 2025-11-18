@@ -1,3 +1,4 @@
+str = "******** \n"  
 #1
 # fruit = 'apple'
 # for char in fruit:
@@ -113,6 +114,24 @@
 
 #enumerate
 
-some_list = ["apple", "banana", "cherry"]
-for index, value in enumerate(some_list):
-    print(index, value)
+# some_list = ["apple", "banana", "cherry"]
+# for index, value in enumerate(some_list):
+#     print(index, value)
+
+
+#zip
+list1 = ["зелене", "стигла", "червоний"]
+list2 = ["яблуко", "вишня", "томат"]
+for adj, fruit in zip(list1, list2):
+    print(adj, fruit)
+
+print(str)
+
+#Коли колекції, передані в zip, мають різну довжину, 
+# zip обробляє елементи до тих пір, поки не закінчаться елементи в найкоротшій колекції.
+
+list1 = [1, 2, 3]
+list2 = ['a', 'b', 'c', 'd', 'e']
+
+for number, letter in zip(list1, list2):
+    print(number, letter)
