@@ -120,18 +120,45 @@ str = "******** \n"
 
 
 #zip
-list1 = ["зелене", "стигла", "червоний"]
-list2 = ["яблуко", "вишня", "томат"]
-for adj, fruit in zip(list1, list2):
-    print(adj, fruit)
+# list1 = ["зелене", "стигла", "червоний"]
+# list2 = ["яблуко", "вишня", "томат"]
+# for adj, fruit in zip(list1, list2):
+#     print(adj, fruit)
 
 print(str)
 
 #Коли колекції, передані в zip, мають різну довжину, 
 # zip обробляє елементи до тих пір, поки не закінчаться елементи в найкоротшій колекції.
 
-list1 = [1, 2, 3]
-list2 = ['a', 'b', 'c', 'd', 'e']
+# list1 = [1, 2, 3]
+# list2 = ['a', 'b', 'c', 'd', 'e']
 
-for number, letter in zip(list1, list2):
-    print(number, letter)
+# for number, letter in zip(list1, list2):
+#     print(number, letter)
+
+
+numbers = {
+    1: "one",
+    2: "two",
+    3: "three"
+}
+
+#перебрати ключі 1 спосіб
+# for key in numbers:
+#     print(key)
+
+#перебрати ключі 
+for key in numbers.keys():
+    print(key)
+
+print(str)
+
+#перебрати значення 
+for val in numbers.values():
+    print(val)
+
+print(str)
+
+#перебрати ключ-значення 
+for key,val in numbers.items():
+    print(key,val)
