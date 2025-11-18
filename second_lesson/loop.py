@@ -93,19 +93,26 @@
 #         print(number)
 #         number = number - 1
 #         if number < 0:
-str = "******** \n"     
-for i in range(5):
-    print(i)           #0,1,2,3,4
+# str = "******** \n"     
+# for i in range(5):
+#     print(i)           #0,1,2,3,4
 
-print(str)
+# print(str)
 
-for i in range(2, 10):
-    print(i)  # 2,3,4,5,6,7,8,9
+# for i in range(2, 10):
+#     print(i)  # 2,3,4,5,6,7,8,9
 
-print(str)
+# print(str)
 
-for i in range(0, 10, 2):
-    print(i)   #0,2,4,6,8
+# for i in range(0, 10, 2):
+#     print(i)   #0,2,4,6,8
 
 
-print(str)
+# print(str)
+
+
+#enumerate
+
+some_list = ["apple", "banana", "cherry"]
+for index, value in enumerate(some_list):
+    print(index, value)
