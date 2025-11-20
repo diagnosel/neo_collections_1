@@ -164,3 +164,35 @@ current_price_sugar = real_cost(price_sugar, 0.07)
 print(f'Нова вартість хліба: {current_price_bread}')
 print(f'Нова вартість масла: {current_price_butter}')
 print(f'Нова вартість цукру: {current_price_sugar}')
+
+
+#*args
+
+def print_all_args(*args):
+    for arg in args:
+        print(arg)
+
+print_all_args(1, 'hello', True)
+
+#
+def concatenate(*args) -> str:
+    result = ""
+    for arg in args:
+        result += arg
+    return result
+
+print(concatenate("Hello", " ", "world", "!"))
+
+#**kwargs
+def greet(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+greet(name="Alice", age=25)
+
+#коли разом
+def example_function(*args, **kwargs):
+    print("Позиційні аргументи:", args)
+    print("Ключові аргументи:", kwargs)
+
+example_function(1, 2, 3, name="Alice", age=25)
