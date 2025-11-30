@@ -88,3 +88,36 @@ print(dt_object)  # Виведе відповідний datetime
 
 print("is now", now)
 print("formatted: ", now.strftime("[%d.%m.%y %H:%M:%S]"))
+
+# Форматування дати і часу
+formatted_date = now.strftime("%Y-%m-%d %H:%M:%S")
+print(formatted_date) 
+
+# Форматування лише дати
+formatted_date_only = now.strftime("%A, %d %B %Y")
+print(formatted_date_only)
+
+# Форматування лише часу
+formatted_time_only = now.strftime("%I:%M %p")
+print(formatted_time_only)  
+
+# Форматування лише дати
+formatted_date_only = now.strftime("%d.%m.%Y")
+print(formatted_date_only)
+
+
+#strptime
+text = "2023-12-14 18:30:00"
+dt = datetime.strptime(text, "%Y-%m-%d %H:%M:%S")
+
+print(dt)        # 2023-12-14 18:30:00
+print(type(dt))  # <class 'datetime.datetime'>
+
+
+
+# Припустимо, у нас є дата у вигляді рядка
+date_string = "2023.03.14"
+
+# Перетворення рядка в об'єкт datetime
+datetime_object = datetime.strptime(date_string, "%Y.%m.%d")
+print(datetime_object)  # Виведе об'єкт datetime, що відповідає вказаній даті та часу
