@@ -145,9 +145,9 @@
 # three_numbers = numbers[2::3]
 # print(three_numbers)
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-reverse_numbers = numbers[::-1]
-print(reverse_numbers) #10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# reverse_numbers = numbers[::-1]
+# print(reverse_numbers) #10, 9, 8, 7, 6, 5, 4, 3, 2, 1
 
 numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 copy_numbers = numbers2[:]
