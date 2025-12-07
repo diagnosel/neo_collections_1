@@ -57,5 +57,8 @@ print(new_text)
 
 #Для видалення фіксованої послідовності на початку рядка є метод removeprefix:
 print('TestHook'.removeprefix('Test')) # Hook
-print('TestHook'.removeprefix('Hook')) # TestHook
+print('TestHook'.removeprefix('Hook')) # TestHook ('Hook' це суфікс рядка і видалений не буде)
 
+#Є парний метод для видалення послідовності в кінці рядка, removesuffix:
+print('TestHook'.removesuffix('Test'))
+print('TestHook'.removesuffix('Hook'))
