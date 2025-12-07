@@ -62,3 +62,19 @@ print('TestHook'.removeprefix('Hook')) # TestHook ('Hook' це суфікс ря
 #Є парний метод для видалення послідовності в кінці рядка, removesuffix:
 print('TestHook'.removesuffix('Test'))
 print('TestHook'.removesuffix('Hook'))
+
+#Ви маєте URL пошукового запиту, 
+# і ваше завдання - видобути та обробити параметри цього запиту. 
+# Наприклад пошуковий запит "Cat and dog"
+
+#<https://www.google.com/search?q=Cat+and+dog&ie=utf-8&oe=utf-8&aq=t>
+
+url_search = "<https://www.google.com/search?q=Cat+and+dog&ie=utf-8&oe=utf-8&aq=t>"
+_, query = url_search.split('?') #використовуємо символ _ для ігнорування частини URL до ?, Та отримуємо змінну query яка рядок, що містить необхідні нам параметри запиту.
+print(query)
+
+obj_query = {}
+for el in query.split('&'):
+    key, value = el.split('=')
+    obj_query.update({key:value.replace('+', ' ')})
+print(obj_query)
