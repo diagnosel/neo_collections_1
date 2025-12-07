@@ -78,3 +78,28 @@ for el in query.split('&'):
     key, value = el.split('=')
     obj_query.update({key:value.replace('+', ' ')})
 print(obj_query)
+
+
+#isdigit() використовується для перевірки, 
+# чи складається рядок повністю з цифр. 
+# Цей метод повертає True, якщо всі символи в рядку є цифрами 
+# та рядок складається принаймні з одного символу, інакше повертає False.
+number = "12345"
+print(number.isdigit())  # Виведе: True
+
+text = "Number123"
+print(text.isdigit())  # Виведе: False
+
+
+user_input = input("Введіть число: ")
+if user_input.isdigit():
+    print("Це дійсно число!")
+else:
+    print("Це не число!")
+
+
+for char in "Hello 123":
+    if char.isdigit():
+        print(f"'{char}' - це цифра")
+    else:
+        print(f"'{char}' - не цифра")
